@@ -1,0 +1,11 @@
+{
+  "appId": "tab2.app",
+  "appName": "masivi",
+  "bundledWebRuntime": true,
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}

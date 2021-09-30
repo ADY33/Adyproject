@@ -1,0 +1,7 @@
+{
+  "name": "masivi",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

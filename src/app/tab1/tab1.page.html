@@ -1,0 +1,108 @@
+<ion-app>
+  <ion-split-pane when="sm" content-id="main-content">
+    <ion-menu content-id="main-content">
+      <ion-header>
+        <ion-toolbar >
+      <ion-buttons slot="start"></ion-buttons>
+
+          <ion-title> Programs</ion-title>
+        </ion-toolbar>
+      </ion-header>
+<!--contenu-->
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item button>
+                <ion-label>
+                  <a href="./create"><b>Add & Edit</b></a>
+                  <ion-icon name="person-add-outline"></ion-icon>
+          
+                </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+        <ion-list>
+         
+          <ion-menu-toggle auto-hide="false">
+            <ion-item button>
+                <ion-label>
+                     <a href="./home"><b>Events</b></a>
+                     <ion-icon name="calendar"></ion-icon>
+                </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item button>
+                <ion-label>
+                  <a href="./house"><b>Participants</b></a>
+                  <ion-icon name="list-outline"></ion-icon>
+                </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+        
+      </ion-content>
+    </ion-menu>
+
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-toggle>
+              <ion-button>
+                <ion-icon slot="icon-only" name="menu"></ion-icon>
+              </ion-button>
+            </ion-menu-toggle>
+          </ion-buttons>
+          <ion-title><ion-icon name="Home"></ion-icon></ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>EVENT APP</ion-card-subtitle>
+
+            <img src="assets/events.jpg">
+            
+            <ion-card-title>Mission</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            Invent App crée des applications mobiles événementielles pour accompagner les entreprises dans la digitalisation de
+            leurs événements.
+          </ion-card-content>
+        </ion-card>
+        
+        <ion-card>
+          <ion-item>
+            <b>WELCOM TO EVENT!</b>
+          </ion-item>
+        </ion-card>
+        
+        <ion-card>
+          <ion-item href="./signup" class="ion-activated">
+            <ion-icon name="person-add-outline" slot="start"></ion-icon>
+            <ion-label>Members</ion-label>
+          </ion-item>
+        
+        
+        </ion-card>
+        
+      </ion-content>
+    </div>
+
+    
+  </ion-split-pane>
+
+</ion-app>
+
+
+<style>
+  a{
+    color: black;
+    margin-left: 10%;
+    text-decoration: none;
+  }
+</style>

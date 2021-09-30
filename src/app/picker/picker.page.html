@@ -1,0 +1,29 @@
+<ion-header [translucent]="false">
+  <ion-toolbar>
+    <ion-title>
+      Camera
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content [fullscreen]="true">
+<div class="ion-padding">
+
+  <ion-button (click)="clickImg()" expand="full" 
+  color="dark">TakePhotos</ion-button>
+
+  <ion-list *ngFor="let photo of photos">
+    <ion-item>
+    <img src={{photo}} style="width: 200px; height:150px;"/>
+    </ion-item>
+  </ion-list>
+</div>
+  <app-explore-container name=""></app-explore-container>
+  
+</ion-content>
+
+
+

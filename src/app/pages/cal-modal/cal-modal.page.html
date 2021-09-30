@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ viewTitle }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="stacked">Title</ion-label>
+    <ion-buttons slot="end">
+      <ion-button (click)="save()"></ion-button>
+    </ion-buttons>
+    <ion-input type="text" [(ngModel)]="event.title"></ion-input>
+  </ion-item>
+
+   <ion-item>
+   <ion-label position="stacked">Description</ion-label>
+   <ion-input type="text" [(ngModel)]="event.desc"></ion-input>
+  </ion-item>
+   
+  <calendar 
+  *ngIf="modalReady"
+  [calendarMode]="calendar.mode"
+  [currentData]="calendar.currentDate"
+  (onTitleChanged)="onViewTitleChanged($event)"
+  (onTimeSelected)="onTimeSelected($event)"
+  lockSwipes="true">
+</calendar>
+
+</ion-content>
